@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 b {
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0f4aca;
+}
+
+.menu {
+    height: 80px;
+}
+
+.menu nav {
+    height: 100px;
+}
+
+.menu nav ul {
+    height: 100px;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li {
+    height: 100px;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    position: relative;
+}
+
+.menu-seletec:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #0f4aca;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a {
+    color: #777777;
+    font-size: 18px;
+    transition: color 500ms;
+}
+
+.menu nav ul li a:hover {
+    color: #0f4aca;
+}
+
+
+.menu .text-menu-seletec{
+    color: #0f4aca;
+
+}
+
+.menu nav ul li a i{
+display: none;
+}
+
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #f7f7f7;
+    border-radius: 100%;
+    color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+#icon-menu:hover {
+    opacity: 0.8;
+}
+
+/*Portada*/
+
+.container-cover {
+   width: 100%;
+   height: 500px;
+   position: relative;
+   margin-top: 80px;
+   background-image: url(../img/fondo1.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.container-cover:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 172, 255, 0.144);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover{
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-info-cover p {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+/*contenedor - contenido del articulo*/
+
+.container-content {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-shadow: -10px 0px 20px -30px rgb(0, 0, 0);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    background: #0f4aca;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+article h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #333333;
+}
+
+article p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+article img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/*contenedor - aside*/
+
+.container-aside aside{
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px -30px black;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 80px;
+}
+
+.container-aside aside img {
+    width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p {
+    margin-top: 20px;
+    padding: 0 2px;
+}
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #0f4aca;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container-aside aside button:hover{
+    background: #0c3299;
+    opacity: 0.9;
+}
+
+/*footer*/
+
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #ffffff;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+    max-width: 1200PX;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer {
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+.container-footer footer .redes-footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    color: #727272;
+    font-size: 50px;
+    margin: 20px;
+    background: whitesmoke;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+.container-footer footer .redes-footer .fa-facebook:hover{
+    background: #0c3299;
+    color: #ffffff;
+}
+
+.container-footer footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #f0e333, #df9f40, #a7385f, #8f1648, #500c8f);
+    color: #ffffff;
+}
+
+.container-footer footer .redes-footer .fa-x-twitter:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #cecece;
+}
+
+.container-footer footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color:rgb(122, 122, 122);
+    font-weight: 500;
+}
+
+/*responsive dsplay */
+
+@media screen and (max-width: 1220px){
+    
+    .header-content,
+    .container-content,
+    .container-footer footer {
+        max-width: 1000%;
+        padding: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1220px){
+
+     .container-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article {
+        box-shadow: none;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .container-all{
+        transition: all 300ms;
+    }
+
+    .move-container-all{
+        transform: translateX(300px);
+    }
+
+    .menu{
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: rgb(255, 255, 255);
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0px 10px -10px black;
+        transition: all 300ms;
+    }
+
+    .show-lateral{
+        width: 300px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+    }  
+
+    .menu nav ul li {
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    .menu-seletec:before{
+        width: 0;
+    }
+
+    .menu nav ul li a{
+        margin-top: 50px;
+        color: #3f3f3f;
+    }
+
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: #0f4aca;
+
+    }
+
+    .container-aside{
+        flex-wrap: wrap;
+    }
+
+
+    #icon-menu{
+        display: flex;
+    }
+}
