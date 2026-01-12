@@ -4,6 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+/* Variables de tema */
+:root{
+    --bg: #ffffff;
+    --text: #000000;
+    --muted: #777777;
+    --header-bg: #ffffff;
+    --card-bg: #ffffff;
+    --accent: #0f4aca;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+    transition: background 300ms, color 300ms;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -118,6 +134,51 @@ display: none;
 #icon-menu:hover {
     opacity: 0.8;
 }
+
+/*######################################################*/
+
+/* Botón de alternar modo */
+.theme-toggle{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 12px;
+    color: #333333;
+}
+
+/* Estilos para modo oscuro (se activa añadiendo la clase `dark` al body) */
+body.dark{
+    --bg: #0b0b0b;
+    --text: #e6e6e6;
+    --muted: #bdbdbd;
+    --header-bg: #0f1720;
+    --card-bg: #111216;
+    --accent: #2b9cff;
+}
+
+body.dark header{
+    background: var(--header-bg);
+}
+
+body.dark article,
+body.dark .container-aside aside,
+body.dark .container-footer{
+    background: var(--card-bg);
+}
+
+body.dark article h1{ color: var(--text); }
+body.dark article p{ color: var(--text); }
+body.dark .menu nav ul li a{ color: var(--muted); }
+body.dark .menu nav ul li a:hover{ color: var(--accent); }
+body.dark .container-footer footer .icon-redes-footer{ background: transparent; }
+
+/*######################################################*/
 
 /*Portada*/
 
