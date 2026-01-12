@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+
+/*######################################################*/
 /* Variables de tema */
 :root{
     --bg: #ffffff;
@@ -19,6 +21,8 @@ body{
     color: var(--text);
     transition: background 300ms, color 300ms;
 }
+
+/*######################################################*/
 
 *{
     margin: 0;
@@ -139,6 +143,7 @@ display: none;
 
 /* Botón de alternar modo */
 .theme-toggle{
+    margin-top: 20px;
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -149,11 +154,11 @@ display: none;
     align-items: center;
     cursor: pointer;
     margin-left: 12px;
-    color: #333333;
+    color: #af0b0b;
 }
 
 /* Estilos para modo oscuro (se activa añadiendo la clase `dark` al body) */
-body.dark{
+body.dark {
     --bg: #0b0b0b;
     --text: #e6e6e6;
     --muted: #bdbdbd;
@@ -162,6 +167,7 @@ body.dark{
     --accent: #2b9cff;
 }
 
+body.dark .menu,
 body.dark header{
     background: var(--header-bg);
 }
@@ -456,6 +462,7 @@ article img {
         transition: all 300ms;
     }
 
+
     .show-lateral{
         width: 300px;
         transform: translateX(0px);
@@ -486,6 +493,11 @@ article img {
         margin-right: 10px;
         color: #0f4aca;
 
+    }
+
+    .theme-toggle{
+        display: center;
+        justify-items: center;
     }
 
     .container-aside{
