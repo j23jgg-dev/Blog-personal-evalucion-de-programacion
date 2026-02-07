@@ -58,7 +58,7 @@ header {
 }
 
 .logo h1 b {
-    font-family: "Changa One", sans-serif;
+    font-family: "Changa One";
     font-weight: 400;
     font-style: normal;
     color: #0f4aca;
@@ -187,6 +187,7 @@ body.dark .container-footer footer .icon-redes-footer{ background: transparent; 
 
 /*######################################################*/
 
+
 /*Portada*/
 
 .container-cover {
@@ -200,6 +201,7 @@ body.dark .container-footer footer .icon-redes-footer{ background: transparent; 
    background-repeat: no-repeat;
 }
 
+
 .container-cover:before {
     content: '';
     width: 100%;
@@ -212,7 +214,7 @@ body.dark .container-footer footer .icon-redes-footer{ background: transparent; 
 
 .container-info-cover{
     max-width: 500px;
-    height: 500px;
+    height: 200px;
     margin: auto;
     text-align: center;
     display: flex;
@@ -224,9 +226,10 @@ body.dark .container-footer footer .icon-redes-footer{ background: transparent; 
 }
 
 .container-info-cover h1 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 50px;
     font-weight: 500;
+    margin-top: 250px;
     margin-bottom: 20px;
     font-family: "Changa One", sans-serif;
     font-weight: 400;
